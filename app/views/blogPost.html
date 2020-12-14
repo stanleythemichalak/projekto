@@ -1,0 +1,105 @@
+<div class="main-container">
+    <section class="page-title page-title-4 image-bg overlay parallax">
+        <div class="background-image-holder fadeIn"
+            style="transform: translate3d(0px, 140.8px, 0px); background: url('img/capital5.jpg'); top: -100px;">
+            <img alt="Background Image" class="background-image" src="img/capital5.jpg" style="display: none;">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="uppercase mb0"></h3>
+                </div>
+                <div class="col-md-6 text-right">
+                    <ol class="breadcrumb breadcrumb-2">
+                        <li>
+                            <a href="/">Strona główna</a>
+                        </li>
+                        <li class="active">Usługi</li>
+                    </ol>
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+
+    <section ng-if="vm.page.files.length === 0">
+        <div class="container content-formatted">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h4 class="mb16">{{vm.page.tytul_pl}}</h4>
+                </div>
+            </div>
+            <!--end of row-->
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <div class="content" ng-bind-html="vm.page.opis_pl">
+                    </div>
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+    <section ng-if="vm.page.files.length > 0">
+        <div class="container content-formatted">
+            <div class="row">
+                <div class="col-md-6 mb-xs-40">
+                    <img class="p32" alt="{{vm.page.tytul_pl}}"
+                        ng-src="./admin/content/uploads/{{vm.page.prefix}}/{{vm.page.files[0].tytul}}">
+                </div>
+                <div class="col-md-5 col-md-push-1 col-sm-12 mt32 mt-sm-80 mt-xs-0 text-center-xs">
+                    <!-- <h3 class="mb64 mb-xs-24 color-primary">{{vm.page.tytul_pl}}</h3> -->
+                    <p ng-bind-html="vm.page.opis_pl">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="">
+        <div class="container">
+            <!--end of row-->
+            <div class="embelish-icons">
+                <i class="ti-marker"></i>
+                <i class="ti-layout"></i>
+                <i class="ti-ruler-alt-2"></i>
+                <i class="ti-eye"></i>
+                <i class="ti-signal"></i>
+                <i class="ti-pulse"></i>
+                <i class="ti-marker"></i>
+                <i class="ti-layout"></i>
+                <i class="ti-ruler-alt-2"></i>
+                <i class="ti-eye"></i>
+                <i class="ti-signal"></i>
+                <i class="ti-pulse"></i>
+            </div>
+        </div>
+        <!--end of container-->
+    </section>
+    <section class="pt32 pb32 mt32 mb32 pb-xs-80 image-zoom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12" ng-repeat="icon in vm.icons track by $index">
+                    <div class="feature feature-3 feature-4 boxed mb-xs-24 ">
+                        <div class="left">
+                            <a ng-href="uslugi/{{icon.id}}/{{icon.tytul_pl}}"><i class="icon-lg"
+                                    ng-class="icon.special"></i></a>
+                        </div>
+                        <div class="right">
+                            <a ng-href="uslugi/{{icon.id}}/{{icon.tytul_pl}}">
+                                <h5 class="uppercase mb16">{{icon.tytul_pl}}</h5>
+                                <p>
+                                    <i class="ti ti-hand-point-right icon-pointer"></i> {{icon.podtytul_pl}}
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <!--end of feature-->
+                </div>
+            </div>
+
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+</div>

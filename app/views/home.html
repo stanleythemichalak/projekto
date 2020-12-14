@@ -1,0 +1,312 @@
+<div class="main-container" ng-controller="HomePageCtrl as vm">
+
+    <section class="cover fullscreen">
+        <video autoplay muted loop style="position: absolute;">
+            <source src="videos/video.mp4" type="video/mp4">
+        </video>
+        <div class="container v-align-transform">
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 text-center">
+                    <img src="img/logo.png" alt="zdjecie">
+                    <!-- 
+                    <h6 class="uppercase mb16 banner-shadow">{{vm.banner.podtytul_pl}}</h6>
+                    <p class="lead mb40 pt120 banner-shadow" ng-bind-html="vm.banner.opis_pl">
+                    </p>
+                    <a class="btn btn-lg btn-filled" href="tel:+48660440904">+48 660 440 904</a> -->
+                </div>
+            </div>
+            <!-- <div class="background-image-holder">
+            <img alt="image" class="background-image"
+                ng-src="./admin/content/uploads/{{vm.banner.prefix}}/{{vm.banner.files[0].tytul}}">
+        </div>
+        <div class="container v-align-transform">
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 text-center">
+                    <h1 class="mb40 mt40 mb-xs-16 large banner-shadow" style="margin-top:150px">{{vm.banner.tytul_pl}}
+                    </h1>
+                    <h6 class="uppercase mb16 banner-shadow">{{vm.banner.podtytul_pl}}</h6>
+                    <p class="lead mb40 pt120 banner-shadow" ng-bind-html="vm.banner.opis_pl">
+                    </p>
+                    <a class="btn btn-lg btn-filled" href="tel:+48660440904">+48 660 440 904</a>
+                </div>
+            </div>
+            
+</div>-->
+
+    </section>
+    <section class="pt64 pb64">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-12 text-center">
+                    <h2 class="mb8">{{vm.about.tytul_pl}}</h2>
+                    <p class="lead mb40" ng-bind-html="vm.about.podtytul_pl">
+                    </p>
+                    <div class="modal-container">
+                        <a class="btn btn-lg btn-modal" href="#">
+                            <i class="ti-layout-menu-v"></i>Zapisz się do Newslettera</a>
+                        <div class="foundry_modal text-center">
+                            <h3 class="uppercase">Newsletter.</h3>
+                            <p class="lead mb48">
+                                Dzięki pozostawieniu nam Twojego maila
+                                <br /> będziemy zawsze mogli poinformować Cię o aktualnych szkoleniach.
+                            </p>
+                            <form class="form-newsletter halves"
+                                data-success="Thanks for your registration, we will be in touch shortly."
+                                data-error="Please fill all fields correctly.">
+                                
+                                <input type="text" name="email"
+                                    class="mb0 validate-email validate-required  signup-email-field"
+                                    placeholder="Adres Email" aria-label="Podaj adres email" />
+                                <button type="submit" class="btn-white mb0">Zapisz mnie!</button>
+                                <iframe
+                                    srcdoc="<!-- Begin MailChimp Signup Form --><link href=&quot;https://cdn-images.mailchimp.com/embedcode/classic-081711.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;><style type=&quot;text/css&quot;> #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }   /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */</style><div id=&quot;mc_embed_signup&quot;><form action=&quot;//mrare.us8.list-manage.com/subscribe/post?u=77142ece814d3cff52058a51f&amp;id=94d040322a&quot; method=&quot;post&quot; id=&quot;mc-embedded-subscribe-form&quot; name=&quot;mc-embedded-subscribe-form&quot; class=&quot;validate&quot; target=&quot;_blank&quot; novalidate>    <div id=&quot;mc_embed_signup_scroll&quot;>   <h2>Subscribe to our mailing list</h2><div class=&quot;indicates-required&quot;><span class=&quot;asterisk&quot;>*</span> indicates required</div><div class=&quot;mc-field-group&quot;>    <label for=&quot;mce-EMAIL&quot;>Email Address  <span class=&quot;asterisk&quot;>*</span></label>   <input type=&quot;email&quot; value=&quot;&quot; name=&quot;EMAIL&quot; class=&quot;required email&quot; id=&quot;mce-EMAIL&quot;></div><div class=&quot;mc-field-group&quot;>  <label for=&quot;mce-FNAME&quot;>First Name </label>    <input type=&quot;text&quot; value=&quot;&quot; name=&quot;FNAME&quot; class=&quot;&quot; id=&quot;mce-FNAME&quot;></div><div class=&quot;mc-field-group&quot;> <label for=&quot;mce-LNAME&quot;>Last Name </label> <input type=&quot;text&quot; value=&quot;&quot; name=&quot;LNAME&quot; class=&quot;&quot; id=&quot;mce-LNAME&quot;></div>   <div id=&quot;mce-responses&quot; class=&quot;clear&quot;>      <div class=&quot;response&quot; id=&quot;mce-error-response&quot; style=&quot;display:none&quot;></div>     <div class=&quot;response&quot; id=&quot;mce-success-response&quot; style=&quot;display:none&quot;></div>   </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->    <div style=&quot;position: absolute; left: -5000px;&quot;><input type=&quot;text&quot; name=&quot;b_77142ece814d3cff52058a51f_94d040322a&quot; tabindex=&quot;-1&quot; value=&quot;&quot;></div>    <div class=&quot;clear&quot;><input type=&quot;submit&quot; value=&quot;Subscribe&quot; name=&quot;subscribe&quot; id=&quot;mc-embedded-subscribe&quot; class=&quot;button&quot;></div>    </div></form></div><script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script><!--End mc_embed_signup-->"
+                                    class="mail-list-form">
+                                </iframe>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end of row-->
+            <div class="embelish-icons">
+                <i class="ti-marker"></i>
+                <i class="ti-layout"></i>
+                <i class="ti-ruler-alt-2"></i>
+                <i class="ti-eye"></i>
+                <i class="ti-signal"></i>
+                <i class="ti-pulse"></i>
+                <i class="ti-marker"></i>
+                <i class="ti-layout"></i>
+                <i class="ti-ruler-alt-2"></i>
+                <i class="ti-eye"></i>
+                <i class="ti-signal"></i>
+                <i class="ti-pulse"></i>
+            </div>
+        </div>
+        <!--end of container-->
+    </section>
+    <section class="pt32 pb32 mt32 mb32 pb-xs-80 image-zoom" id="uslugi">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12" ng-repeat="icon in vm.icons track by $index">
+                    <div class="feature feature-3 feature-4 boxed mb-xs-24 ">
+                        <div class="left">
+                            <a ng-href="uslugi/{{icon.id}}/{{icon.tytul_pl}}"><title>wzmacniamy</title><i class="icon-lg"
+                                    ng-class="icon.special"></i></a>
+                        </div>
+                        <div class="right">
+                            <a ng-href="uslugi/{{icon.id}}/{{icon.tytul_pl}}">
+                                <h5 class="uppercase mb16">{{icon.tytul_pl}}</h5>
+                                <p>
+                                    <i class="ti ti-hand-point-right icon-pointer"></i> {{icon.podtytul_pl}}
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <!--end of feature-->
+                </div>
+            </div>
+
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+    <section class="image-bg overlay parallax-item" style="background-image: url('img/cover11.jpg');">
+        <!-- <div class="background-image-holder fadeIn"
+            style="transform: translate3d(0px, 230.2px, 0px); background: url(&quot;img/cover11.jpg&quot;);">
+            <img alt="Background Image" class="background-image" src="img/cover11.jpg" style="display: none;">
+        </div> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h3 class="uppercase mb64 mb-xs-32">Wszechstronność to nasze drugie imię!</h3>
+                </div>
+            </div>
+            <!--end of row-->
+            <div class="row">
+                <div class="col-sm-4" ng-repeat="entry in vm.prices track by $index" ng-if="$index < 3">
+                    <div class="feature feature-1 boxed">
+                        <div class="text-center">
+                            <a ng-href="uslugi/{{entry.id}}/{{entry.tytul_pl}}">
+                                <i class="icon" ng-class="entry.special"></i>
+                                <h5 class="uppercase mb16">{{entry.tytul_pl}}</h5>
+                            </a>
+                        </div>
+
+                        <!-- <p ng-bind-html="entry.opis_pl">
+                        </p> -->
+                    </div>
+                    <!--end of feature-->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4" ng-repeat="entry in vm.prices track by $index" ng-if="$index >=3 && $index < 6">
+                    <div class="feature feature-1 boxed">
+                        <div class="text-center">
+                            <a ng-href="obszary/{{entry.id}}/{{entry.tytul_pl}}"><i class="icon"
+                                    ng-class="entry.special"></i>
+                                <h5 class="uppercase mb16">{{entry.tytul_pl}}</h5>
+                            </a>
+                        </div>
+
+                        <!-- <p ng-bind-html="entry.opis_pl">
+                        </p> -->
+                    </div>
+                    <!--end of feature-->
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+
+    <section class="pt32 pb32 mt32 mb32 pb-xs-80 image-zoom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-xs-40">
+                    <img class="p32" alt="{{vm.training.tytul_pl}}"
+                        ng-src="./admin/content/uploads/{{vm.training.prefix}}/{{vm.training.files[0].tytul}}">
+                </div>
+                <div class="col-md-5 col-md-push-1 col-sm-12 mt32 mt-sm-80 mt-xs-0 text-center-xs">
+
+                    <div class="tabbed-content button-tabs">
+
+                        <ul class="content">
+                            <li class="active">
+                                <div class="tab-content">
+                                    <p ng-bind-html="vm.training.opis_pl">
+                                    </p>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+    <section class="image-bg overlay pt16 pb16">
+        <div class="background-image-holder">
+            <img class="background-image" src="img/arch1.jpg" alt="zdjecie">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 col-sm-12 text-center">
+                    <h3 class=" mb16 mt16 bold uppercase">{{vm.bio.tytul_pl}}</h3>
+                    <p class="lead">{{vm.bio.podtytul_pl}}</p>
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+    <section class="bg-secondary" id="klienci">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center " style="display: inline-flex;
+                justify-content: center;">
+                    <div class="col-md-2"><img alt="Pic" src="img/logos/vitamed.png"></div>
+                    <div class="col-md-2"><img alt="Pic" src="img/logos/pnwb.png"></div>
+                    <div class="col-md-2"><img alt="Pic" src="img/logos/dentex.png"></div>
+                    <div class="col-md-2"><img alt="Pic" src="img/logos/craftly.png"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="pt0 pb0" id="o_nas">
+        <div class="container">
+            <div class="row mb-xs-32">
+                <div class="col-sm-6 pb16" ng-repeat="cert in vm.bio.files track by $index">
+                    <div class="image-caption cast-shadow mb-xs-32">
+                        <img alt="{{vm.bio.tytul_pl}}"
+                            ng-src="./admin/content/uploads/{{vm.bio.prefix}}/{{cert.tytul}}">
+                        <!-- <div class="caption">
+                            <p>
+                                <strong>Note:</strong> Here is an image caption
+                            </p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="image-bg overlay">
+        <div class="background-image-holder">
+            <img class="background-image" src="img/intro1.jpg" alt="zdjecie dwa">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 text-center">
+                    <h3 class=" mb40 mb-xs-24 bold uppercase">{{vm.time.tytul_pl}}</h3>
+                    <p class="lead" ng-bind-html="vm.time.opis_pl"></p>
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+    <section id="kontakt">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 text-center">
+                    <h3 class="color-primary mb40 mb-xs-24 bold uppercase">{{vm.contact.tytul_pl}}</h3>
+                    <p class="lead" ng-bind-html="vm.contact.opis_pl"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="image-square left" id="contact">
+
+        <div class=" col-md-6 content">
+            <form class="text-left" ng-controller="formCtrl as vm" name="mainForm" novalidate
+                ng-submit="vm.submitForm();">
+                        <label for="name">name</label>
+                        <label for="email">email</label>
+                        <label for="phone">telefon</label>
+                        <label for="company">firma</label>
+                        <label for="wiadomosc">zostaw wiadomosc</label>
+                        <label for="zaznacz">zaznacz</label>
+                <input type="text" name="name" placeholder="Imię" required ng-model="vm.form.name"
+                    ng-disabled="vm.hideForm" / id="name">
+                <input type="text" name="email" placeholder="Mail" required ng-model="vm.form.mail"
+                    ng-disabled="vm.hideForm" / id="email">
+                <input type="text" name="phone" placeholder="Telefon" required ng-model="vm.form.phone"
+                    ng-disabled="vm.hideForm" / id="phone">
+                <input type="text" name="company" placeholder="Firma" required ng-model="vm.form.company"
+                    ng-disabled="vm.hideForm" / id="company">
+                <textarea placeholder="Wiadomość" class="validate-required" name="content" rows="4"
+                    ng-model="vm.form.content" id="wiadomosc"></textarea>
+                <input type="checkbox" id="zaznacz" name="pp" required> <label><a href="#/polityka_prywatnosci">Polityka
+                        prywatności</a></label>
+
+                <input type="submit" value="Wyślij" ng-disabled="mainForm.$invalid" />
+                <p ng-show="vm.hideForm">
+                    Dziękujemy za kontakt
+                </p>
+            </form>
+        </div>
+        <div class="col-md-6 p0 image">
+
+            <div class="map-holder background-image-holder">
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=187cq1IRGj8m2GQHUYrGjAoeA0gAwB0XT"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="bg-dark pt120 pb120 pt-xs-40 pb-xs-40">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 text-center">
+                    <a href="https://www.facebook.com/Projekto-113997036648956/" target="_blank"><i
+                            class="icon color-primary mb40 mb-xs-24 ti ti-facebook icon-lg"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section> -->
+</div>

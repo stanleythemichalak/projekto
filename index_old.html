@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Projekto - wprowadzimy twój biznes na dobre tory!</title>
+    <meta property="og:site_name" content="Projekto" />
+    <meta property="og:image" content="admin/content/uploads/267ad0fbe88d5a7766820e5bded90e85/_3249108335.jpg" />
+    <meta property="og:description"
+        content="Projekto - agencja reklamowa specjalizująca się w marketingu medycznym w internecie i w bezpośrednim kontakcie z pacjentami." />
+    <meta name="description"
+        content="Projekto - agencja reklamowa specjalizująca się w marketingu medycznym w internecie i w bezpośrednim kontakcie z pacjentami." />
+    <meta name="keywords"
+        content="projekty medyczne, markieting medyczny, medyczna agencja reklamowa, promowanie klinik medycznych, kreowanie marki medycznej" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/pe-icon-7-stroke.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/et-line-icons.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/theme-startup.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="./app/scripts/components/ciastkoCiastki/ciastkoCiastki.css" rel="stylesheet" type="text/css"
+        media="all">
+    <link
+        href="https://fonts.googleapis.com/css?family=Lato:300,400|Open+Sans:400,600|Raleway:100,300,400,500,600,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+</head>
+
+<body ng-app="app" ng-controller="MainCtrl as vm">
+
+    <div class="nav-container navbar-fixed-top">
+        <div class="loading" ng-show="loading">Loading&#8230;</div>
+
+        <nav class="absolute bg-light">
+            <div class="nav-bar">
+                <div class="module left">
+                    <a href="tel:+48660440904" style="
+					font-size: 30px;">
+                        +48 660 440 904
+                    </a>
+                </div>
+
+                <div class="module widget-handle offscreen-toggle right">
+                    <i class="ti-menu"></i>
+                </div>
+            </div>
+            <div class="offscreen-container bg-dark text-center">
+                <div class="close-nav">
+                    <a>
+                        <i class="ti-close"></i>
+                    </a>
+                </div>
+                <div class="v-align-transform text-center">
+                    <a href="#" style="letter-spacing: 10px;
+					font-size: 30px;">
+                        MENU
+                    </a>
+                    <ul class="mb40 mb-xs-24 mt40">
+
+                        <li class="fade-on-hover">
+                            <a href="./#/#uslugi" class="inner-link">
+                                <h5 class="uppercase mb8">Usługi</h5>
+                            </a>
+                        </li>
+                        <li class="fade-on-hover">
+                            <a href="./#/#szkolenia" class="inner-link">
+                                <h5 class="uppercase mb8">Szkolenia</h5>
+                            </a>
+                        </li>
+                        <li class="fade-on-hover">
+                            <a href="./#/#o_nas" class="inner-link">
+                                <h5 class="uppercase mb8">O nas</h5>
+                            </a>
+                        </li>
+                        <li class="fade-on-hover">
+                            <a href="./#/#klienci" class="inner-link">
+                                <h5 class="uppercase mb8">Klienci</h5>
+                            </a>
+                        </li>
+                        <li class="fade-on-hover">
+                            <a href="./#/#kontakt" class="inner-link">
+                                <h5 class="uppercase mb8">Kontakt</h5>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="fade-half"></p>
+                    <ul class="list-inline social-list">
+                        <li>
+                            <a href="https://www.facebook.com/Projekto-113997036648956/">
+                                <i class="ti-facebook"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--end of offscreen container-->
+        </nav>
+    </div>
+    <div ng-view=""></div>
+    <ciastko-ciastki policy-link="'#/polityka_prywatnosci'" site-id="'projekto'"></ciastko-ciastki>
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-translate/angular-translate.min.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <!--<script src="./js/scripts.js"></script>-->
+    <script src="./app/scripts/app.js"></script>
+    <!-- config files -->
+    <script src="./app/scripts/config/app.config.js"></script>
+    <!-- services -->
+    <script src="./app/scripts/services/loadingInterceptor.service.js"></script>
+    <script src="./app/scripts/services/data.service.js"></script>
+    <!-- Constants services -->
+    <script src="./app/scripts/constants/config.const.js"></script>
+    <!-- controllers -->
+    <script src="./app/scripts/controllers/main.ctrl.js"></script>
+    <script src="./app/scripts/controllers/home.ctrl.js"></script>
+    <script src="./app/scripts/controllers/form.ctrl.js"></script>
+    <script src="./app/scripts/controllers/pp.ctrl.js"></script>
+
+    <!-- components -->
+    <script src="./app/scripts/components/ciastkoCiastki/ciastkoCiastki.js"></script>
+    <script src="./app/scripts/components/ciastkoCiastki/ciastkoCiastki.ctrl.js"></script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/parallax.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!-- header -->
+<section class="cover fullscreen">
+    <div class="background-image-holder">
+        <img alt="image" class="background-image"
+            ng-src="./admin/content/uploads/{{vm.banner.prefix}}/{{vm.banner.files[0].tytul}}">
+    </div>
+    <div class="container v-align-transform">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 text-center">
+                <h1 class="mb40 mt40 mb-xs-16 large banner-shadow" style="margin-top:150px">{{vm.banner.tytul_pl}}
+                </h1>
+                <h6 class="uppercase mb16 banner-shadow">{{vm.banner.podtytul_pl}}</h6>
+                <p class="lead mb40 pt120 banner-shadow" ng-bind-html="vm.banner.opis_pl">
+                </p>
+                <a class="btn btn-lg btn-filled" href="tel:+48660440904">+48 660 440 904</a>
+            </div>
+        </div>
+        <!--end of row-->
+    </div>
+
+    </ul>
+</section>
+<!-- map -->
+<section class="p0">
+    <div>
+
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=187cq1IRGj8m2GQHUYrGjAoeA0gAwB0XT"
+            style="width:100%; height:600px"></iframe>
+    </div>
+</section>
+<!-- szkolenia -->
+<section id="szkolenia" class="image-bg overlay pt16 pb16">
+    <div class="background-image-holder">
+        <img class="background-image" src="img/arch1.jpg">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 col-sm-12 text-center">
+                <h3 class="mb16 mt16 bold uppercase">{{vm.training.tytul_pl}}</h3>
+            </div>
+        </div>
+        <!--end of row-->
+    </div>
+    <!--end of container-->
+</section>
+
+
+
+<div class="row">
+    <div class="col-md-6 mb-xs-40">
+        <img class="p32" alt="{{vm.about.tytul_pl}}"
+            ng-src="./admin/content/uploads/{{vm.about.prefix}}/{{vm.about.files[0].tytul}}">
+    </div>
+    <div class="col-md-5 col-md-push-1 col-sm-12 mt32 mt-sm-80 mt-xs-0 text-center-xs">
+        <h3 class="mb64 mb-xs-24 color-primary">{{vm.about.tytul_pl}}</h3>
+        <div class="tabbed-content button-tabs">
+
+            <ul class="content">
+                <li class="active">
+                    <div class="tab-content">
+                        <p ng-bind-html="vm.about.opis_pl">
+                        </p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
